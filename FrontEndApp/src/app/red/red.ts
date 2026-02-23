@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Myservice } from '../myservice';
 
 @Component({
   selector: 'app-red',
@@ -29,7 +30,17 @@ export class Red {
 
   price: number = 100;
 
+  constructor(private serve1: Myservice) {
+    console.log('Red component constructor');
+  }
+
   ngOnInit() {
+    console.log(this.serve1.getBooks());
+    console.log(this.serve1.greeting());
+    this.Books = this.serve1.getBooks();
+    this.Books.push(this.serve1.getBooks()[0]);
+    this.serve1.addBook({ id: 4, title: "The Catcher", author: "New Author" });
+    console.log(this.serve1.getBooks());
     console.log('Red component initialized');
   }
 

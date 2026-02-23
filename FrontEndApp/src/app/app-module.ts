@@ -11,6 +11,9 @@ import { ElaichiChai } from './elaichi-chai/elaichi-chai';
 import { GingerChai } from './ginger-chai/ginger-chai';
 import { PlainChai } from './plain-chai/plain-chai';
 import { FormsModule } from '@angular/forms';
+import { Blue } from './blue/blue';
+import { Green } from './green/green';
+import { Orange } from './orange/orange';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { FormsModule } from '@angular/forms';
     MasaChai,
     ElaichiChai,
     GingerChai,
-    PlainChai
+    PlainChai,
+    Blue,
+    Green,
+    Orange
   ],
   imports: [
     BrowserModule,

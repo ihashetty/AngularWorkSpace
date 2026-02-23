@@ -1,4 +1,20 @@
 <app-red></app-red>
+
+<h1 style="text-align:center;">Angular Routing Demo</h1>
+
+<nav style="text-align:center; margin-bottom:20px;">
+  <a routerLink="/red" routerLinkActive="active">Red</a> |
+  <a routerLink="/yellow" routerLinkActive="active">Yellow</a> |
+  <a routerLink="/blue" routerLinkActive="active">Blue</a> |
+  <a routerLink="/green" routerLinkActive="active">Green</a> |
+  <a routerLink="/orange" routerLinkActive="active">Orange</a>
+</nav>
+
+<br>
+
+<!-- Routed components will load here -->
+<router-outlet></router-outlet>
+
 <html>
     <body>
         <div style="text-align: center; padding: 20px; font-family: Arial, sans-serif; background-color: #f5e6d3; min-height: 100vh;">
