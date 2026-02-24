@@ -16,6 +16,8 @@ import { Green } from './green/green';
 import { Orange } from './orange/orange';
 import { Catalogue } from './catalogue/catalogue';
 import { AddBook } from './add-book/add-book';
+import { DeleteBook } from './delete-book/delete-book';
+import { UpdateBook } from './update-book/update-book';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { AddBook } from './add-book/add-book';
     Green,
     Orange,
     Catalogue,
-    AddBook
+    AddBook,
+    DeleteBook,
+    UpdateBook
   ],
   imports: [
     BrowserModule,
