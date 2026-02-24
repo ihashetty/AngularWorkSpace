@@ -14,6 +14,8 @@ import { FormsModule } from '@angular/forms';
 import { Blue } from './blue/blue';
 import { Green } from './green/green';
 import { Orange } from './orange/orange';
+import { Catalogue } from './catalogue/catalogue';
+import { AddBook } from './add-book/add-book';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { Orange } from './orange/orange';
     PlainChai,
     Blue,
     Green,
-    Orange
+    Orange,
+    Catalogue,
+    AddBook
   ],
   imports: [
     BrowserModule,
